@@ -17,17 +17,18 @@ const searchBook = () => {
     //show data
     const showData = books => {
         books.forEach(book => {
-            console.log(book.title);
+            // console.log(book.title);
+            console.log(book.author_name);
 
             // create and append div 
             const div = document.createElement('div');
             div.classList.add('col-md-4');
             div.innerHTML = `
-             <div class="border border-primary p-2">
-                <h6 >Book Name:<span class="fw-bold">${book.title}</span> </h6>
-                <p>book author:</p>
-                <p>book publisher name</p>
-                <p>book first  published year</p>
+             <div class="border border-primary p-2 m-4">
+                <h6 >Book Name: <span class="fw-bold">  ${book.title}</span> </h6>
+                <p>book Author Name:  <span class="fw-bold"> ${book.author_name}</span> </p>
+                <p>book publisher name: <span class="fw-bold"> ${book.publisher}</span></p>
+                <p>First published year: <span class="fw-bold"> ${book.first_publish_year}</span> </p>
             </div>
             `;
             bookContainer.appendChild(div)
