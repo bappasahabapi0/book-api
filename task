@@ -1,0 +1,13 @@
+01.we have a search box & a button.
+02.kotogula search paoia gece seita dekhabe.
+
+03.Showing these information:
+	--> book name.
+	--> book author.
+	-->book publisher name .
+	-->book first  published year.
+	--> search result koto gulo(integer number) dekhate 	            hbe.
+04Bonus part:
+	using all arrow function
+	using forEach loop
+	large picture.

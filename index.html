@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book arcive</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+  <style>
+    /* Fonts */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container my-4 w-75">
+    <!-- Input Box -->
+    <div class="d-flex">
+      <input id="search-input" type="text" class="form-control me-2" placeholder="Seach by book names" />
+      <button onclick="searchBook()" class=" btn btn-success text-white" ">Search</button>
+    </div>
+  </section>
+
+
+  <!-- Book  Details -->
+  <section class=" container">
+        <div class="row" id="book-details"></div>
+        <hr />
+  </section>
+
+
+  <section class="container mt-2">
+    <div id="error"></div>
+    <!-- Books -->
+    <div id="book-container" class="row">
+
+      <!-- Reapeating -->
+      <!-- <div class="col-md-3 col-12">
+        
+          <div class="rounded overflow-hidden border p-2">
+            <img
+              src="..."
+              class="w-100"
+              alt=""
+            />
+          </div>
+          
+          <div
+            class="
+              py-2
+              d-flex
+              justify-content-between
+              align-items-center
+              d-md-block
+              text-md-center
+            "
+          >
+            <h1>javascript</h1>
+            <button class="btn btn-dark">Learn More</button>
+          </div>
+        </div> -->
+      <!-- Repeating -->
+    </div>
+  </section>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
