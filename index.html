@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book arcive</title>
+  <title>Book Archive </title>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
@@ -25,56 +25,38 @@
 </head>
 
 <body>
-  <section class="container my-4 w-75">
+  <main>
+    <h1 class="text-center fw-bold mt-3">Search the books📚📙📓 </h1>
     <!-- Input Box -->
-    <div class="d-flex">
-      <input id="search-input" type="text" class="form-control me-2" placeholder="Seach by book names" />
-      <button onclick="searchBook()" class=" btn btn-success text-white btn-custom" ">Search</button>
-    </div>
-  </section>
+    <section class="container my-4 w-75">
+      <div class="d-flex">
+        <input id="search-input" type="text" class="form-control me-2" placeholder="Seach by book names" />
+        <button onclick="searchBook()" class=" btn btn-success text-white btn-custom" ">Search</button>
+    </section>
 
-
-  <!-- Book  Details -->
-  <section class=" container">
-        <div class="row" id="book-details"></div>
-        <hr />
-  </section>
-
-
-  <section class="container mt-2">
-    <div id="error"></div>
-    <!-- Books -->
-    <div id="book-container" class="row">
-
-      <!-- Reapeating -->
-      <!-- <div class="col-md-3 col-12">
-        
-          <div class="rounded overflow-hidden border p-2">
-            <img
-              src="..."
-              class="w-100"
-              alt=""
-            />
+    
+      <!-- Error and Result container -->
+      <section class=" container">
+          <!-- error  -->
+          <div id="error" class="bg-danger fw-bold fs-2 p-3 text-white text-center w-50 mx-auto rounded">
+            please give a valid book name ?
           </div>
-          
-          <div
-            class="
-              py-2
-              d-flex
-              justify-content-between
-              align-items-center
-              d-md-block
-              text-md-center
-            "
-          >
-            <h1>javascript</h1>
-            <button class="btn btn-dark">Learn More</button>
+
+          <!-- Total Result  -->
+          <div class="row text-center fw-bold fs-2 mx-auto bg-dark text-white w-50 p-3 " id="total">
+            Total search result is:
           </div>
-        </div> -->
-      <!-- Repeating -->
-    </div>
-  </section>
-  <script src="js/index.js"></script>
+
+          <hr />
+    </section>
+
+    <!-- Books-Container -->
+    <section class="container mt-2">
+      <div id="book-container" class="row"> </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </main>
 </body>
 
 </html>
