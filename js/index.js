@@ -41,7 +41,6 @@ const searchBook = () => {
 }
 //show data
 const showData = books => {
-    console.log(books);
 
     if (books === null) {
         errorMessage();
@@ -49,10 +48,12 @@ const showData = books => {
     else {
         errorDiv.style.display = 'none';
         total.style.display = 'block';
+
         // show total search 
         total.innerText = `Search Result is 📙 : ${books.length}`;
 
         books?.forEach(book => {
+
             // create and append div 
             const div = document.createElement('div');
             div.classList.add('col-md-4');
@@ -65,8 +66,6 @@ const showData = books => {
                         alt="no image found"
                         />
                     </div>
-
-                    
                     <div class="overflow-hidden">
                         <h6 >Book Name: <span class="fw-bold overflow-hidden">  ${book.title.slice(0, 50)}</span> </h6>
                         <p>book Author Name:  <span class="fw-bold overflow-hidden"> ${book.author_name ? book.author_name : 'Not found'}</span> </p>
